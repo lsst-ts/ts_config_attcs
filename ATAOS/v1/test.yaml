@@ -9,5 +9,3 @@ m2:
 hexapod_z:
   - 5.
   - 2.
-
-correction_frequency: 0.032
