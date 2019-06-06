@@ -1,2 +1,4 @@
 # Labels for recommended settings; a dict of label: config_file
 test: test.yaml
+sim: sim.yaml
+default: measured_20190606.yaml
