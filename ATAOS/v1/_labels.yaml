@@ -1,2 +1,3 @@
 # Labels for recommended settings; a dict of label: config_file
+current: test_20190725.yaml
 test: test.yaml
