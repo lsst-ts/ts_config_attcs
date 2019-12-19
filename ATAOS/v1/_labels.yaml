@@ -1,5 +1,2 @@
 # Labels for recommended settings; a dict of label: config_file
-current: test_20190725.yaml
-test: test.yaml
-sim: sim.yaml
-default: measured_20190606.yaml
+current: hex_m1_201912.yaml
