@@ -1,4 +1,4 @@
-correction_frequency: 0.2
+correction_frequency: 1.
 
 m1:
   - 138277.38566765
@@ -27,8 +27,8 @@ hexapod_w:
   - 0.0000
 
 correction_tolerance:
-  m1: 100.
-  m2: 100.
+  m1: 500.
+  m2: 500.
   x: 0.001
   y: 0.001
   z: 0.001
