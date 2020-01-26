@@ -1,3 +1,4 @@
 # Labels for recommended settings; a dict of label: config_file
-current: hex_m1_201912.yaml
-tolerance: hex_m1_201912_with_tolerances.yaml
+current: hex_m1_202001.yaml
+constant_hex: hex_m1_202001_constant_hex.yaml
+high_degree: hex_m1_202001_high_degree.yaml
