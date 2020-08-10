@@ -2,7 +2,8 @@
 # Date created: 2020-05-24, updated to v3 on 2020-08-10
 # Description: DM-23757 Updated m1 lookup tables to use the proper force per support (the number of
 #              supports was incorrect in the previous data).
-#              DM-25150 only adds chromatic dependence terms.
+#              DM-25150 only adds chromatic dependence terms, which are approximated from on-sky data.
+#                       It is expected these terms will need revision as dataset was poor.
 
 correction_frequency: 1.
 

@@ -2,7 +2,8 @@
 # Date created: 2020-05-24, updated to v3 on 2020-08-10
 # Description: DM-23757 Updated hexapod lookup tables after updating the m1 tables
 #             (in hex_m1_202003_constant_hex) based on on-sky testing.
-#             DM-25150 only adds chromatic dependence terms.
+#             DM-25150 only adds chromatic dependence terms, which are approximated from on-sky data.
+#                      It is expected these terms will need revision as dataset was poor.
 
 correction_frequency: 1.
 
