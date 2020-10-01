@@ -1,0 +1,52 @@
+# Ticket used to create this file: DM-23757, updated to v3 in DM-25150
+# Date created: 2020-05-24, updated to v3 on 2020-08-10
+# Description: DM-23757 Updated m1 lookup tables to use the proper force per support (the number of
+#              supports was incorrect in the previous data).
+#              DM-25150 only adds chromatic dependence terms, which are approximated from on-sky data.
+#                       It is expected these terms will need revision as dataset was poor.
+
+correction_frequency: 1.
+
+m1:
+  -  -23093764.324
+  - +102195277.538
+  - -189824540.387
+  - +191664153.580
+  - -113529679.686
+  -  +39429444.367
+  -   -7299398.286
+  -    +577871.121
+
+m2:
+  - 0.
+
+hexapod_x:
+  - -4.7000197
+
+hexapod_y:
+  - 1.08066562
+
+hexapod_z:
+  - 0.52859514
+
+hexapod_u:
+  - 0.3500
+
+hexapod_v:
+  - 0.2200
+
+hexapod_w:
+  - 0.0000
+
+correction_tolerance:
+  m1: 500.
+  m2: 500.
+  x: 0.001
+  y: 0.001
+  z: 0.001
+  u: 0.001
+  v: 0.001
+
+chromatic_dependence:
+  - 2.1e-5
+  - 0.0
