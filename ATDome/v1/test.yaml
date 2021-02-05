@@ -1,4 +1,0 @@
-host: 139.229.170.45
-port: 17310
-connection_timeout: 10.
-read_timeout: 10.
