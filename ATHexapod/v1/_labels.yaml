@@ -1,2 +1,4 @@
-summit: auxtel_201912.yaml
-ncsa: ncsa_202002.yaml
+# Labels for recommended settings; a dict of label: config_file
+current: auxtel_201912_v1.yaml
+summit: auxtel_201912_v1.yaml
+ncsa: ncsa_202002_v1.yaml
