@@ -1,2 +1,2 @@
 # Labels for recommended settings; a dict of label: config_file
-test: test.yaml
+current: summit_20210205_v1.yaml
