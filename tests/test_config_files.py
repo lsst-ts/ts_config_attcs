@@ -37,11 +37,13 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ATDome(self):
         self.check_standard_config_files(sal_name="ATDome",
                                          module_name="lsst.ts.ATDome",
+                                         schema_name="CONFIG_SCHEMA",
                                          config_package_root=self.config_package_root)
 
     def test_ATDomeTrajectory(self):
         self.check_standard_config_files(sal_name="ATDomeTrajectory",
                                          module_name="lsst.ts.ATDomeTrajectory",
+                                         schema_name="CONFIG_SCHEMA",
                                          config_package_root=self.config_package_root)
 
     def test_ATHexapod(self):
