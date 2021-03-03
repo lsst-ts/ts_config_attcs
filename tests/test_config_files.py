@@ -1,6 +1,6 @@
 # This file is part of ts_config_attcs.
 #
-# Developed for the LSST Telescope and Site Systems.
+# Developed for Vera C. Rubin Observatory Telescope and Site Systems.
 # This product includes software developed by the LSST Project
 # (https://www.lsst.org).
 # See the COPYRIGHT file at the top-level directory of this distribution
@@ -37,11 +37,13 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ATDome(self):
         self.check_standard_config_files(sal_name="ATDome",
                                          module_name="lsst.ts.ATDome",
+                                         schema_name="CONFIG_SCHEMA",
                                          config_package_root=self.config_package_root)
 
     def test_ATDomeTrajectory(self):
         self.check_standard_config_files(sal_name="ATDomeTrajectory",
                                          module_name="lsst.ts.ATDomeTrajectory",
+                                         schema_name="CONFIG_SCHEMA",
                                          config_package_root=self.config_package_root)
 
     def test_ATHexapod(self):
