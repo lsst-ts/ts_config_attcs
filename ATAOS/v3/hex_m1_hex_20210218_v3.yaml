@@ -3,6 +3,9 @@
 # Description: DM-28826 Support AT observing run
 #   Data taken on the summit still pending validation.
 #   New M1 pressure LUT with data taken on 20210216
+#   New Hexapod LUT obtained by combining old data (taken for 202003
+#   configuration) plus additional data taken on 20210217. Only data with
+#   elevation larger than 50 degrees was used from the 202003 dataset.
 
 correction_frequency: 1.
 
@@ -15,27 +18,25 @@ m2:
   - 0.
 
 hexapod_x:
-  -         +6.285
-  -        -20.969
-  -        +27.138
-  -        -16.115
-  -         -1.535
+  -    -214.840283
+  -    +715.670761
+  -    -893.780676
+  -    +516.399689
+  -    -139.496624
+  -     +10.872385
 
 hexapod_y:
-  -         -1.741
-  -         +3.850
-  -         -3.158
-  -         +1.767
+  -      -0.658659
+  -      -0.146944
+  -      +1.461427
 
 hexapod_z:
-  -       -279.386
-  -      +1676.871
-  -      -4064.106
-  -      +5214.778
-  -      -3855.691
-  -      +1654.010
-  -       -384.112
-  -        +38.008
+  -     +30.312426
+  -     -88.648850
+  -     +88.139997
+  -     -30.217845
+  -      -1.065925
+  -      +1.835957
 
 hexapod_u:
   - 0.3500
