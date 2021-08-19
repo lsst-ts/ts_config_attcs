@@ -4,6 +4,8 @@
 #   Details can be found in https://sitcomtn-015.lsst.io/
 #   Hexapod LUT is based on initial tests taken on this night
 #   Refinement will probably be needed once more data is available
+#   Added m1_pressure_minimum and set to ~6.5 PSI (45000 Pa), which is
+#   just above the minimum output for this transducer (6)
 
 correction_frequency: 1.
 
@@ -12,6 +14,8 @@ m1:
   -    -220485.725
   -     278187.272
   -     -48810.102
+
+m1_pressure_minimum: 45000.0
 
 m2:
   - 0.
