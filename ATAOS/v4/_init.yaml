@@ -1,0 +1,64 @@
+correction_frequency: 1
+m1:  [0]
+m1_lut_elevation_limits: [0, 90]
+m1_pressure_minimum: 0.0
+m2: [0]
+m2_lut_elevation_limits: [0, 90]
+hexapod_x: [0]
+hexapod_y: [0]
+hexapod_z: [0]
+hexapod_u: [0]
+hexapod_v: [0]
+hexapod_lut_elevation_limits: [0, 90]
+hexapod_sensitivity_matrix:
+  -
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+chromatic_dependence: [0]
+correction_tolerance:
+  m1: 0
+  m2: 0
+  x: 0
+  y: 0
+  z: 0
+  u: 0
+  v: 0
