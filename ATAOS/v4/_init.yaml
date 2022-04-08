@@ -32,12 +32,12 @@ hexapod_x:
   -         -3.961
 
 hexapod_y:
-  -          2.23
   -         -0.09132
+  -          2.23
 
 hexapod_z:
-  -         -0.9852
   -         -0.2007
+  -         -0.9852
 
 hexapod_lut_elevation_limits:
   - 17.
