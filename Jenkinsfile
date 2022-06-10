@@ -41,23 +41,21 @@ pipeline {
 
                         function update_package {
                             # Update the specified T&S package
-                            echo "update {$1}"
-                            cd /home/saluser/repos/{$1}
+                            cd /home/saluser/repos/\${1}
                             /home/saluser/.checkout_repo.sh ${WORK_BRANCHES}
                             git pull
                         }
 
                         function update_or_clone_package {
                             # Update the specified T&S package if it exists,
-                            # else git clone it from https://github.com/lsst-ts/{$1}.git
-                            if [ -d "/home/saluser/repos/{$1}" ]; then
-                                update_package "{$1}"
+                            # else git clone it from https://github.com/lsst-ts/\${1}.git
+                            if [ -d "/home/saluser/repos/\${1}" ]; then
+                                update_package "\${1}"
                             else
                                 # Package does not exist; clone it
                                 cd /home/saluser/repos
-                                echo "git clone https://github.com/lsst-ts/{$1}.git"
-                                git clone https://github.com/lsst-ts/{$1}.git
-                                cd /home/saluser/repos/{$1}
+                                git clone https://github.com/lsst-ts/\${1}.git
+                                cd /home/saluser/repos/\${1}
                                 /home/saluser/.checkout_repo.sh ${WORK_BRANCHES}
                                 pip install --ignore-installed -e .
                                 eups declare -r . -t current
