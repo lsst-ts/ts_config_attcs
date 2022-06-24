@@ -1,10 +1,9 @@
-# Ticket used to create this file: DM-33466
-# Date created: 2022-04-06
-# Description: New M1 values derived from looking at when the mirror lifts.
-#   Details can be found in https://sitcomtn-015.lsst.io/
-#   Hexapod LUT updated based on data from February onwards.
-#   Modified m1_pressure_minimum and set to ~2.18 PSI (15000 Pa), which is
-#   just above the minimum output for the new transducer (2).
+# Ticket used to create this file: DM-35030
+# Date created: 2022-06-07
+# Description: Increased hexapod correction tolerances.
+# z based on sensitivity matrix of 4nm WFE per 0.001 mm, so set to 0.002 mm (8nm WFE) which is below the measurement capability
+# x and y based on 178 nm WFE/mm, so set to 0.056 mm, which corresponds to 8nm WFE. 
+# u,v are not used and therefore unchanged.
 
 correction_frequency: 1.
 
@@ -52,9 +51,9 @@ hexapod_v:
 correction_tolerance:
   m1: 500.
   m2: 500.
-  x: 0.001
-  y: 0.001
-  z: 0.001
+  x: 0.056
+  y: 0.056
+  z: 0.002
   u: 0.001
   v: 0.001
 
