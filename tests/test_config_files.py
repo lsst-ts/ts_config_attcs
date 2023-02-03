@@ -39,7 +39,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ATDome(self):
         self.check_standard_config_files(
             sal_name="ATDome",
-            module_name="lsst.ts.ATDome",
+            module_name="lsst.ts.atdome",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
@@ -47,7 +47,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ATDomeTrajectory(self):
         self.check_standard_config_files(
             sal_name="ATDomeTrajectory",
-            module_name="lsst.ts.ATDomeTrajectory",
+            module_name="lsst.ts.atdometrajectory",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
