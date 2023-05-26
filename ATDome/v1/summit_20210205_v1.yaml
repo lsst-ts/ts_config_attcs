@@ -1,8 +1,0 @@
-# Ticket used to create this file: DM-28685
-# Date created: 2021-02-05
-# Description: This was a rename of 'test.yaml' to the standardized format
-
-host: 139.229.170.45
-port: 17310
-connection_timeout: 10.
-read_timeout: 10.
