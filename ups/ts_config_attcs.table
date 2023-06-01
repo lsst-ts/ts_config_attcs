@@ -1,1 +1,5 @@
-# eups is just used to set $TS_CONFIG_..._DIR
+setupOptional(ts_ataos)
+setupOptional(ts_atdome)
+setupOptional(ts_atdometrajectory)
+# TODO DM-39439: rename to ts_athexapod
+setupOptional(ts_ATHexapod)
