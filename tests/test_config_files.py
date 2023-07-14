@@ -53,8 +53,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_ATHexapod(self):
         self.check_standard_config_files(
             sal_name="ATHexapod",
-            # TODO DM-39439: change the next line to:
-            # module_name="lsst.ts.athexapod",
-            module_name="lsst.ts.ATHexapod.config_schema",
+            module_name="lsst.ts.athexapod",
             config_package_root=self.config_package_root,
         )
