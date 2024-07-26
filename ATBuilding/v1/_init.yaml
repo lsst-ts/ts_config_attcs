@@ -1,0 +1,4 @@
+host: localhost
+port: 17311
+connection_timeout: 10
+read_timeout: 10
