@@ -1,0 +1,129 @@
+# Ticket used to create this file: DM-46190
+# Date created: 2022-06-07
+# Description: Increased hexapod correction tolerances.
+# z based on sensitivity matrix of 4nm WFE per 0.001 mm, so set to 0.002 mm (8nm WFE) which is below the measurement capability
+# x and y based on 178 nm WFE/mm, so set to 0.056 mm, which corresponds to 8nm WFE. 
+# u,v are not used and therefore unchanged.
+
+correction_frequency: 1.
+
+m1:
+  -     114351.586
+  -    -220485.725
+  -     278187.272
+  -     -48810.102
+
+m1_pressure_minimum: 15000.0
+
+m1_lut_elevation_limits:
+  - 0.
+  - 86.
+
+m2_lut_elevation_limits:
+- 0.
+- 86.
+
+m2:
+  - 0.
+
+hexapod_x:
+  # 2D polynomial coefficients for hexapod_x
+  # The first index corresponds to powers of cos(elevation)
+  # The second index corresponds to powers of temperature
+  # This represents: a0 + a1*cos(elevation) + a2*temp + a3*cos(elevation)^2 + a4*cos(elevation)*temp + a5*temp^2
+  - [-2.82802535, 0.0, 0.0]       # Constant + linear in temp + quadratic in temp
+  - [-3.21588167, 0.0, 0.0]       # Linear in cos(elevation) + cross term (el*temp) + cross term (el * temp**2)
+  - [2.44487012, 0.0, 0.0]        # Quadratic in cos(elevation) + cross term (el**2 * temp) + cross term (el**2 * temp**2)
+
+hexapod_y:
+  # 2D polynomial coefficients for hexapod_x
+  # The first index corresponds to powers of cos(elevation)
+  # The second index corresponds to powers of temperature
+  # This represents: a0 + a1*cos(elevation) + a2*temp + a3*cos(elevation)^2 + a4*cos(elevation)*temp + a5*temp^2
+  - [2.27793731, 0.0]        # Constant + linear in temp
+  - [-0.10081641, 0.0]       # Linear in cos(elevation) + cross term (el*temp)
+
+
+hexapod_z:
+  # 2D polynomial coefficients for hexapod_x
+  # The first index corresponds to powers of cos(elevation)
+  # The second index corresponds to powers of temperature
+  # This represents: a0 + a1*cos(elevation) + a2*temp + a3*cos(elevation)^2 + a4*cos(elevation)*temp + a5*temp^2
+  - [-1.01288846, -0.00948993, 0.0]        # Constant + linear in temp + quadratic in temp
+  - [-0.18841824, 0.03803437, 0.0]         # Linear in cos(elevation) + cross term (el*temp) + cross term (el * temp**2)
+  - [-0.04906108, -0.02266193, 0.0]        # Quadratic in cos(elevation) + cross term (el**2 * temp) + cross term (el**2 * temp**2)      
+
+hexapod_lut_elevation_limits:
+  - 17.
+  - 86.
+
+hexapod_lut_temperature_limits:
+  - 1.
+  - 18.
+
+fallback_temperature: 15.
+max_temperature_telemetry_age: 300.
+temperature_item_index: 2
+
+hexapod_u:
+  - 0.3500
+
+hexapod_v:
+  - 0.2200
+
+correction_tolerance:
+  m1: 500.
+  m2: 500.
+  x: 0.056
+  y: 0.056
+  z: 0.002
+  u: 0.001
+  v: 0.001
+
+chromatic_dependence:
+  - 2.1e-5
+  - 0.0
+
+hexapod_sensitivity_matrix:
+  -
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0
+      - 0.0
+  -
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 1.0

@@ -36,6 +36,13 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
+    def test_ATBuilding(self):
+        self.check_standard_config_files(
+            sal_name="ATBuilding",
+            module_name="lsst.ts.atbuilding.csc",
+            config_package_root=self.config_package_root,
+        )
+
     def test_ATDome(self):
         self.check_standard_config_files(
             sal_name="ATDome",
